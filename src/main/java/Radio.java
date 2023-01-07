@@ -3,6 +3,14 @@ public class Radio {
     private int currentVolume;
     private final int maxVolume = 10;
     private final int minVolume = 0;
+    
+      public int getCurrentStation() {
+        return currentStation;
+    }
+
+    public int getCurrentVolume() {
+        return currentVolume;
+    }
 
     public void setCurrentStation(int newCurrentStation) {
         if (newCurrentStation > 9) {
@@ -23,15 +31,6 @@ public class Radio {
         }
         currentVolume = newCurrentVolume;
     }
-
-    public int getCurrentStation() {
-        return currentStation;
-    }
-
-    public int getCurrentVolume() {
-        return currentVolume;
-    }
-
 
     public void nextStation() {
         if (currentStation < 9) {
