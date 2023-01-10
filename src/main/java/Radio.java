@@ -45,7 +45,6 @@ public class Radio {
         currentVolume = newCurrentVolume;
     }
 
-
     public void nextStation() {
         if (currentStation < maxStation) {
             currentStation++;
